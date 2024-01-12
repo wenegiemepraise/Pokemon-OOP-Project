@@ -71,7 +71,7 @@ class Pokemon_Trainer():
             return f"You don't have {Item.name_item} in your bag."
         
     def use_mega_stone(self, Pokemon, Mega_stone):
-        if Pokemon.has_mega_evolved == True:
+        if Pokemon.has_mega_evolved:
             return f"{Pokemon.name} is already mega evolved!"
         
         if Mega_stone.name_mega_stone in [stone.name_mega_stone for stone in self.mega_stone_bag]:
