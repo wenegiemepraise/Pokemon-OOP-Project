@@ -44,7 +44,7 @@ class Pokemon_Trainer():
         return f"The Items in your bag are {self.item_bag}"
 
     def add_mega_stone(self, Mega_stone):
-        if self.name.capitalize == "Praise" and len(self.mega_stone_bag) < 3:
+        if self.name.capitalize() == "Praise" and len(self.mega_stone_bag) < 3:
             self.mega_stone_bag.append(Mega_stone)
         elif len(self.mega_stone_bag) < 1:
             self.mega_stone_bag.append(Mega_stone)
